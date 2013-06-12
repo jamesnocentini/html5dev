@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Page</title>
+
+  <style>
+      header{
+          margin-left: 100px;
+      }
+
+      section{
+          position: relative;
+          float: left;
+          width: 60%;
+          margin-left: 5%;
+      }
+
+      figure{
+          float: right;
+          margin: 0;
+          width: 30%;
+          position: relative;
+      }
+
+      .pic{
+          width: 95%;
+          padding: 10px;
+      }
+
+      article{
+          float: left;
+          width: 100%;
+          position: relative;
+          margin-bottom: 20px;
+      }
+
+      aside{
+          position: relative;
+          float: right;
+          width: 30%;
+      }
+      .page-footer{
+          position: absolute;
+          bottom: 0px;
+      }
+
+      header:hover, section:hover, aside:hover {
+          background-color: #76b1df;
+      }
+      article:hover{
+          background-color: #5888af;
+      }
+  </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 About Page</h1>
+    </header>
+
+    <section>
+        <header>
+            <h1>James Nocentini</h1>
+        </header>
+
+        <article itemscope itemtype="http://data-vocabulary.org/Person">
+            <header>
+                <h3 itemprop="name">Profile:</h3>
+            </header>
+            <figure>
+                <img class="pic" itemprop="image" src="https://si0.twimg.com/profile_images/3635252554/6325ce61dd2d3adbca1239954700ff4b.jpeg">
+            </figure>
+
+            <p>
+                Hi! My name is James, I am <span birthDate="30/03/1991">22</span>, I work as a <span itemprop="jobTitle">Web Developer</span> for a little company called <span item-prop="affiliation">Domus Automation</span>
+                in <span itemprop="locality">Sophia Antipolis</span>, <span itemprop="region">South of France</span>.
+            </p>
+
+            <footer>
+                Mobile: <span itemprop="telephone">0123456789</span>
+                <br>
+                <a itemprop="email" href="mailto:james.nocentini@gmail.com">Email</a> <a itemprop="url" href="http://jamiltz.com" target="_blank">jamiltz.com</a>
+                <br>
+                I am on Twitter <a itemprop="url" href="https://twitter.com/jamiltz" target="_blank">@Jamiltz</a>
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h3>Habits</h3>
+            </header>
+            <details>
+                <summary>Things I love</summary>
+                <p>Cycling, AngularJS, Sailing, NodeJS, a free open web with WebRTC, big cities, nature, design, Apple</p>
+            </details>
+        </article>
+
+        <article>
+            <header>
+                <h3>About the assignment:</h3>
+            </header>
+            <p>Here are the screenshots, as requested:</p>
+            <ul>
+               <li>HTML5 Outliner with Chrome: <a href="./images/html5_outliner.png">pic</a></li>
+               <li>Google Rich snippet tool: <a href="./images/html5_outliner.png">pic</a></li>
+            </ul>
+        </article>
+
+
+
+    </section>
+
+    <aside>
+        <header>
+            <h1>Other Stuff</h1>
+        </header>
+        I like challenges and fun stuff too...
+
+        <figure class="pic">
+            <img class="pic" src="http://sphotos-f.ak.fbcdn.net/hphotos-ak-prn2/971286_10151963029342796_1009253038_n.jpg">
+            <figcaption>
+                On a bike trip from London to Paris fundraising for charities. It's not too late to <a href="http://www.justgiving.com/teams/thetwoarches2013" target="_blank">donate</a>.
+            </figcaption>
+        </figure>
+
+        <figure class="pic">
+            <iframe width="100%" src="http://www.youtube.com/embed/mQTh8y23VLM" frameborder="0" allowfullscreen></iframe>
+            <figcaption>
+                A time-lapse video I did with some friends. Sorry for this very bad intro :|
+            </figcaption>
+        </figure>
+
+
+    </aside>
+
+    <br>
+    <!--<footer class="page-footer">-->
+        <!--&copy;<span itemprop="copyrightYear">2013</span>-->
+    <!--</footer>-->
+
+</body>
+</html>
