@@ -2,8 +2,88 @@
 <html>
 <head>
   <title>About Page</title>
+
+  <style>
+      header{
+          margin-left: 100px;
+      }
+
+      section{
+          position: relative;
+          float: left;
+          width: 60%;
+          margin-left: 5%;
+      }
+
+      figure{
+          float: right;
+          margin: 0;
+          width: 30%;
+          position: relative;
+      }
+
+      article{
+          float: left;
+          width: 60%;
+          position: relative;
+          margin-bottom: 20px;
+      }
+
+      aside{
+          position: relative;
+          float: right;
+          width: 30%;
+      }
+
+      header:hover, section:hover, aside:hover {
+          background-color: #d9dfb6;
+      }
+  </style>
+
 </head>
 <body>
-Hd3hwqod
+
+    <header>
+        <h1>HTML5 About Page</h1>
+    </header>
+
+    <section>
+        <figure>
+            <img src="https://si0.twimg.com/profile_images/3635252554/6325ce61dd2d3adbca1239954700ff4b.jpeg">
+        </figure>
+
+        <article itemscope itemtype="http://schema.org/Person">
+            <p itemprop="name">James Nocentini</p>
+            <p itemprop="title">Web Developer</p>
+            <p itemprop="affiliation">Domus Automation</p>
+        </article>
+
+        <article itemprop="Address" itemscope itemtype="http://schema.org/Address">
+            <span itemprop="street-address">10, Downing Street</span>
+            <span itemprop="locality">London</span>
+            <span itemprop="region">Greater London</span>
+            <span itemprop="postal-code">WC1</span>
+            <span itemprop="country-name">United Kingdom</span>
+        </article>
+
+        <article>
+            <details>
+                <summary>What I love</summary>
+                <p>Cool</p>
+            </details>
+        </article>
+
+
+
+    </section>
+
+    <aside>
+        Hello, I'm James and this is my about page for the first assignment of the W3C online course. Loving it so far...
+    </aside>
+
+    <footer>
+
+    </footer>
+
 </body>
 </html>
