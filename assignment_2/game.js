@@ -138,10 +138,10 @@ function checkArrowDown (e) {
     arrs[37] = 'left';
     arrs[39] = 'right';
     if(arrs[key] == 'left') {
-        playerX -= 40;
+        playerX += 40;
     }
     if(arrs[key] == 'right') {
-        playerX += 40;
+        playerX -= 40;
     }
 }
 document.onkeydown = checkArrowDown;
