@@ -1,0 +1,22 @@
+body{
+    /*background-color: purple;*/
+    width: 900px;
+    height: 2000px;
+    /*display: block;*/
+    margin: 0 auto;
+    font: 20px 'Helvetica';
+}
+
+header{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+canvas{
+    background-color: beige;
+}
+
+#canvas2 {
+    background-color: beige;
+}
+
