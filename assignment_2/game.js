@@ -109,7 +109,7 @@ function checkCollisionsWithObstacles(canvas, context, playerX, playerY) {
     var touche = false;
     for(i = 0; i < obstacles.length; i++) {
 
-        touche = rectsOverlap(playerX, playerY, 20, 20, obstacles[i].x, obstacles[i].y, 100, 100);
+        touche = rectsOverlap(playerX, playerY, 20, 100, obstacles[i].x, obstacles[i].y, 100, 100);
 
         if(touche) {
             if(point != i) {
