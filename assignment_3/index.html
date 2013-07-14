@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="styles/css/normalize.css">
+  <link rel="stylesheet" href="styles/css/font-awesome.css">
+  <link rel="stylesheet" href="styles/css/animation.css">
+  <link rel="stylesheet" href="styles/css/main.css">
+</head>
+<body>
+
+    <form class="signup" name="signup" autocomplete>
+        <header class="signup_header">
+            <h1>W3C discussion</h1>
+        </header>
+        <section class="signup_body"><br>
+
+            <input autofocus required class="signup_input single" type="text" name="first" placeholder="First Name">
+            <div class="signup_input_valid"><i class="icon-ok"></i></div>
+            <input required class="signup_input single" type="text" name="last" placeholder="Last Name">
+            <div class="signup_input_valid"><i class="icon-ok"></i></div>
+
+            <section class="signup_user">
+                <input type="file" accept="image/*;" capture="camera" id="fileupload" onchange="displayImage(this);">
+                <label class="signup_pic left" for="fileupload">Upload Picture</label>
+                <div class="signup_circle"><i class="icon-user"></i></div>
+                <button type="button" onclick="startStream();" class="signup_pic right">Take Picture</button>
+            </section>
+
+            <div class="signup_thumb"><img src="http://placehold.it/140x100" width="140" height="100"></div>
+            <div class="signup_video"><video id="signup_output" height="100" width="140" autoplay></video></div>
+            <canvas id="screenshot_canvas" height="480" width="640" style="display: none;"></canvas>
+
+            <input id="pass1" oninput="checkPasswords();" class="signup_input top" type="password" name="pass" placeholder="Password">
+            <input id="pass2" oninput="checkPasswords();" class="signup_input bottom" type="password" name="passsconfirm" placeholder="Confirm">
+
+            <input required class="signup_input single" type="email" name="email" placeholder="Email">
+            <div class="signup_input_valid"><i class="icon-ok"></i></div>
+
+            <input required class="signup_input single" type="tel" name="phone" placeholder="Phone">
+            <div class="signup_input_valid"><i class="icon-ok"></i></div>
+
+            <div class="signup_address">
+                <button type="button" onclick="locateMe();" class="locate_button">Locate Me</button><br>
+                <input required class="signup_input double top" type="address" name="address" placeholder="Street Name">
+                <input required id="signup_county" class="signup_input double top" type="address" name="address" placeholder="County"><br>
+                <input required id="signup_city" class="signup_input double bottom" type="address" name="address" placeholder="City">
+                <input required id="signup_country" class="signup_input double bottom" type="address" name="address" placeholder="Country">
+            </div>
+
+            <!--<div class="signup_input_valid"><i class="icon-ok"></i></div>-->
+
+
+
+        </section>
+        <footer class="signup_footer">
+            <button type="submit" class="signup_button">Sign Up</button>
+        </footer>
+
+    </form>
+
+    <br><br><br><br><br>
+
+</body>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="./script.js"></script>
+
+</html>

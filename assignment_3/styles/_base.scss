@@ -1,0 +1,36 @@
+@import "utils";
+
+@import "variables";
+
+@font-face {
+  font-family: 'Cocktail Shaker';
+  src: url(./../../fonts/cocktail-shaker.ttf);
+}
+
+@mixin vertical-align($margin) {
+  position: relative;
+  top: 50%;
+  margin-top: #{$margin}px;
+  margin-bottom: 0px;
+}
+
+.Input {
+
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+
+  outline: none;
+  border: 1px solid $inputBorder;
+}
+
+.Button {
+  border: none;
+  padding: 5px 20px;
+}
+
+@-webkit-keyframes playing{
+  0% {border-color: $playingLightGreen;}
+  50% {border-color: $playingDarkGreen;}
+  100% {border-color: $playingLightGreen;}
+}
